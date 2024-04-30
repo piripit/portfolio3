@@ -38,37 +38,45 @@ ul {
     padding: 0 30px;
     opacity: 1;
 }
-.hidden{
+
+.hidden {
     display: none !important;
 }
-.main-content{
+
+.main-content {
     padding-left: 270px;
 }
-.pad-15{
+
+.pad-15 {
     padding-left: 15px;
     padding-right: 15px;
 }
-.container{
+
+.container {
     max-width: 1100px;
-    width: 100%; 
-    margin: auto;    
+    width: 100%;
+    margin: auto;
 }
-.section .container{
+
+.section .container {
     padding-top: 60px;
     padding-bottom: 70px;
 }
-.section-title{
+
+.section-title {
     flex: 0 0 100%;
     max-width: 100%;
-    
+
 }
-.section-title h2{
+
+.section-title h2 {
     font-size: 40px;
     font-weight: 700;
     color: var(--text-blacky-900);
     position: relative;
 }
-.section-title h2::before{
+
+.section-title h2::before {
     content: '';
     height: 4px;
     width: 50px;
@@ -77,7 +85,8 @@ ul {
     top: 100%;
     left: 0;
 }
-.section-title h2::after{
+
+.section-title h2::after {
     content: '';
     height: 4px;
     width: 25px;
@@ -87,14 +96,16 @@ ul {
     left: 0;
     margin-top: 8px;
 }
-.row{
+
+.row {
     display: flex;
     flex-wrap: wrap;
     margin-left: -15px;
     margin-right: -15px;
     position: relative;
 }
-.btn{
+
+.btn {
     font-size: 16px;
     font-weight: 500;
     padding: 12px 35px;
@@ -107,9 +118,11 @@ ul {
     background: var(--skin-color);
     transition: all 0.3s ease;
 }
-.btn:hover{
+
+.btn:hover {
     transform: scale(1.05);
 }
+
 /*aside*/
 .aside {
     width: 270px;
@@ -133,41 +146,46 @@ ul {
     font-size: 30px;
     text-transform: capitalize;
 }
-.aside .logo a{
+
+.aside .logo a {
     color: var(--text-blacky-900);
     font-weight: 700;
-    padding: 15px 20px; 
+    padding: 15px 20px;
     font-size: 30px;
     letter-spacing: 5px;
     position: relative;
 }
-.aside .logo a span{
+
+.aside .logo a span {
     font-family: "Clicker Script", cursive;
     font-size: 40px;
 }
-.aside .logo a::before{
+
+.aside .logo a::before {
     content: '';
     position: absolute;
-    width:20px;
+    width: 20px;
     height: 20px;
     border-bottom: 5px solid var(--skin-color);
-    border-left:5px solid var(--skin-color) ;
+    border-left: 5px solid var(--skin-color);
     bottom: 0;
     left: 0;
 
 }
-.aside .logo a::after{
+
+.aside .logo a::after {
     content: '';
     position: absolute;
-    width:20px;
+    width: 20px;
     height: 20px;
     border-top: 5px solid var(--skin-color);
-    border-right:5px solid var(--skin-color) ;
+    border-right: 5px solid var(--skin-color);
     top: 0;
     right: 0;
 
 }
-.aside .nav-toggler{
+
+.aside .nav-toggler {
     height: 40px;
     width: 45px;
     border: 1px solid var(--blacky-50);
@@ -181,14 +199,16 @@ ul {
     align-items: center;
     justify-content: center;
 }
-.aside .nav-toggler span{
+
+.aside .nav-toggler span {
     height: 2px;
     width: 18px;
     background: var(--skin-color);
     display: inline-block;
     position: relative;
 }
-.aside .nav-toggler span::before{
+
+.aside .nav-toggler span::before {
     content: '';
     height: 2px;
     width: 18px;
@@ -197,7 +217,8 @@ ul {
     top: -6px;
     left: 0;
 }
-.aside .nav-toggler span::after{
+
+.aside .nav-toggler span::after {
     content: '';
     height: 2px;
     width: 18px;
@@ -206,73 +227,84 @@ ul {
     top: 6px;
     left: 0;
 }
-.aside .nav{
+
+.aside .nav {
     margin-top: 50px;
 }
-.aside .nav li{
+
+.aside .nav li {
     margin-bottom: 20px;
     display: block;
-    
+
 }
-.aside .nav li a{
+
+.aside .nav li a {
     font-size: 16px;
     font-weight: 600;
     display: block;
     color: var(--text-blacky-900);
     padding: 5px 15px;
     border-bottom: 1px solid var(--blacky-50);
-    
+
 }
-.aside .nav li a.active{
+
+.aside .nav li a.active {
     color: var(--skin-color);
 }
-.aside .nav li a i{
+
+.aside .nav li a i {
     margin-right: 15px;
 }
+
 /* home */
-.home{
+.home {
     min-height: 100vh;
     display: flex;
-    color:var(--text-blacky-900);
+    color: var(--text-blacky-900);
 }
-.home .home-info{
+
+.home .home-info {
     flex: 0 0 60%;
     max-width: 60%;
 }
-h3.hello{
+
+h3.hello {
     font-size: 28px;
     margin: 15px 0;
 }
-h3.hello span{
+
+h3.hello span {
     font-family: 'clicker Script' cursive;
     font-size: 30px;
     font-weight: 700;
     color: var(--skin-color);
 }
-h3.profession{
+
+h3.profession {
     font-size: 30px;
     margin: 15px 0;
 }
-.typing{
+
+.typing {
     color: var(--skin-color);
 }
-.home-info p{
+
+.home-info p {
     margin-bottom: 70px;
-    font-size:20px;
+    font-size: 20px;
     color: var(--text-blacky-900);
 }
 
-.home .home-img{
+.home .home-img {
     flex: 0 0 40%;
     max-width: 40%;
     text-align: center;
     position: relative;
 }
 
-.home .home-img img{
+.home .home-img img {
     height: 400px;
     margin: auto;
     border-radius: 5px;
 
 }
- 
