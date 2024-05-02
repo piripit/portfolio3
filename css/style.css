@@ -5,7 +5,7 @@
     --blacky-100: #fdf9ff;
     --blacky-50: #e8dfec;
     --text-blacky-900: #302e4d;
-    --text-blacky-900: #504e70;
+    --text-blacky-700: #504e70;
 }
 
 body {
@@ -505,6 +505,61 @@ h3.profession {
     font-size: 16px;
     text-align: justify;
     color: grey;
+}
+/*Projet*/
+.projet .container{
+    padding-bottom: 40px;
+}
+.projet .projet-item{
+    margin-bottom: 30px;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+.projet .projet-item .projet-item-inner{
+    background-color: var(--blacky-100);
+    border: 1px solid var(--blacky-50);
+    padding: 30px 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+.projet .projet-item .projet-item-inner:hover{
+    box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
+
+}
+.projet .projet-item .projet-item-inner .icon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+
+}
+.projet .projet-item .projet-item-inner .icon .fa{
+    font-size: 40px;
+    line-height: 60px;
+    color: var(--skin-color);
+}
+.projet .projet-item .projet-item-inner:hover .icon {
+    background-color: var(--skin-color);
+}
+.projet .projet-item .projet-item-inner:hover .icon .fa{
+    font-size: 25px;
+    color: #ffffff;
+}
+.projet .projet-item .projet-item-inner h4{
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--text-blacky-900);
+    margin-bottom: 15px;
+    text-transform: capitalize;
+}
+.projet .projet-item .projet-item-inner p{
+    font-size: 16px;
+    color: var(--text-blacky-700);
+    line-height: 25px;
 }
 
 
