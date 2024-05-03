@@ -561,6 +561,92 @@ h3.profession {
     color: var(--text-blacky-700);
     line-height: 25px;
 }
+/*travaux*/
+.travaux .container{
+    padding-bottom: 40px;
+}
+.travaux .travaux-heading{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.travaux .travaux-heading h2{
+    color: var(--text-blacky-900);
+    font-weight: 500;
+}
+.travaux .travaux-item{
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    margin-bottom: 30px;
+}
+.travaux .travaux-item-inner{
+    border: 6px solid var(--blacky-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.travaux .travaux-item-inner .travaux-img img{
+    width: 100%;
+    display: block;
+}
+/*comprep*/
+.skills-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .skills-table th, .skills-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+  }
+  
+  .skills-table th {
+    background-color: #f2f2f2;
+    text-align: left;
+  }
+/*veille*/
+/*entreprise*/
+/*contact*/
+.contact-title{
+    color: var(--skin-color);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.contact-sub-title{
+    color: var(--text-blacky-900);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+.contact .contact-info-item{
+    flex: 0 0 33%;
+    max-width: 33%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contact .contact-info-item .icon{
+    display: inline-block;
+}
+.contact .contact-info-item .icon .fa{
+    font-size: 25px;
+    color: var(--skin-color);
+}
+.contact .contact-info-item h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-blacky-900);
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+.contact .contact-info-item p{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-blacky-700);
+    font-weight: 400;
+}
+
+
 
 
 
