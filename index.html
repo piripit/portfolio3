@@ -6,6 +6,12 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/color.css" />
+    <!--style switcher-->
+    <link rel="stylesheet" href="css/color.css" class="alternate-style" title="color" disabled/>
+    <link rel="stylesheet" href="css/color2.css" class="alternate-style" title="color2" disabled/>
+    <link rel="stylesheet" href="css/color3.css" class="alternate-style" title="color3" disabled/>
+    <link rel="stylesheet" href="css/color4.css" class="alternate-style" title="color4" disabled/>
+    <link rel="stylesheet" href="css/color5.css" class="alternate-style" title="color5" disabled/>
     <link rel="stylesheet" href="css/style-switcher.css"/>
     <link
       rel="stylesheet"
@@ -25,32 +31,32 @@
         </div>
         <ul class="nav">
           <li>
-            <a href="#" class="active"><i class="fa fa-home"></i>Home</a>
+            <a href="#home" class="active"><i class="fa fa-home"></i>Home</a>
           </li>
           <li>
-            <a href="#" class=""><i class="fa fa-user"></i> About</a>
+            <a href="#About" class=""><i class="fa fa-user"></i> About</a>
           </li>
           <li>
-            <a href="#" class=""
+            <a href="#Projet" class=""
               ><i class="fa-sharp fa-solid fa-hand-holding-hand"></i>Projet</a
             >
           </li>
           <li>
-            <a href="#" class=""><i class="fa fa-folder"></i>Travaux</a>
+            <a href="#Travaux" class=""><i class="fa fa-folder"></i>Travaux</a>
           </li>
           <li>
-            <a href="#" class=""
+            <a href="#comprep" class=""
               ><i class="fa fa-list"></i> Competences<br />Repertoire</a
             >
           </li>
           <li>
-            <a href="#" class=""><i class="fa fa-briefcase"></i> Veille</a>
+            <a href="#veille" class=""><i class="fa fa-briefcase"></i> Veille</a>
           </li>
           <li>
-            <a href="#" class=""><i class="fa fa-building"></i> Entreprise</a>
+            <a href="#entreprise" class=""><i class="fa fa-building"></i> Entreprise</a>
           </li>
           <li>
-            <a href="#" class=""><i class="fa fa-comments"></i> Contacts</a>
+            <a href="#contact" class=""><i class="fa fa-comments"></i> Contacts</a>
           </li>
         </ul>
       </div>
@@ -713,10 +719,10 @@
         <i class="fas fa-cog fa-spin"></i>
       </div>
       <div class="day-night s-icon">
-        <i class="fas fa-moon"></i>
+        <i class="fas "></i>
       </div>
       <h4>Option Color</h4>
-      <div class="color">
+      <div class="colors">
         <span class="color" onclick="setActiveStyle('color')"></span>
         <span class="color2" onclick="setActiveStyle('color2')"></span>
         <span class="color3" onclick="setActiveStyle('color3')"></span>
@@ -728,5 +734,6 @@
     <!--   Main container end-->
 
     <script src="JavaScript/main.js"></script>
+    <script src="JavaScript/style-switcher.js"></script>
   </body>
 </html>

@@ -7,6 +7,14 @@
     --text-blacky-900: #302e4d;
     --text-blacky-700: #504e70;
 }
+body.dark{
+    --blacky-900: #151515;
+    --blacky-100: #222222;
+    --blacky-50: #393939;
+    --text-blacky-900: #ffffff;
+    --text-blacky-700: #e9e9e9;
+
+}
 
 body {
     line-height: 1.5;
@@ -595,14 +603,17 @@ h3.profession {
     border-collapse: collapse;
   }
   
+  
   .skills-table th, .skills-table td {
     border: 1px solid #ccc;
     padding: 8px;
+    color: var(--text-blacky-700);
   }
   
   .skills-table th {
-    background-color: #f2f2f2;
+   
     text-align: left;
+    
   }
 /*veille*/
 /*entreprise*/
