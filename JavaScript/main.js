@@ -59,3 +59,27 @@ document.addEventListener("DOMContentLoaded", function () {
     );
   });
 });
+// Vérifier la largeur de l'écran au chargement de la page
+window.addEventListener("load", function() {
+  ajusterAffichage();
+});
+
+// Vérifier la largeur de l'écran lors du redimensionnement
+window.addEventListener("resize", function() {
+  ajusterAffichage();
+});
+
+// Fonction pour ajuster l'affichage du tableau en fonction de la largeur de l'écran
+function ajusterAffichage() {
+  if (window.innerWidth <= 450) {
+      document.getElementById("tableau").style.display = "none";
+      document.getElementById("boutonVoirTableau").style.display = "block";
+  } else {
+      document.getElementById("tableau").style.display = "block";
+      document.getElementById("boutonVoirTableau").style.display = "none";
+  }
+}
+// Masquer le tableau lorsque le bouton est cliqué
+document.getElementById("boutonVoirTableau").addEventListener("click", function() {
+  document.getElementById("tableau").style.display = "none";
+});

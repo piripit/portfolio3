@@ -896,3 +896,28 @@ h3.profession {
 }
 
 /* Pour une largeur d'écran minimale de 400px */
+#tableau {
+    display: block;
+}
+#boutonVoirTableau {
+    display: none;
+}
+@media screen and (max-width: 450px) {
+    #tableau {
+        display: none;
+    }
+    #boutonVoirTableau {
+        display: block;
+    }
+}
+@media screen and (max-width:330){
+    .btn-container{
+        display: block;
+        margin: 0;
+
+    }
+}
+
+  
+  /* Afficher les boutons à la place */
+  
