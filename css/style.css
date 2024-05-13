@@ -7,7 +7,8 @@
     --text-blacky-900: #302e4d;
     --text-blacky-700: #504e70;
 }
-body.dark{
+
+body.dark {
     --blacky-900: #151515;
     --blacky-100: #222222;
     --blacky-50: #393939;
@@ -50,24 +51,28 @@ ul {
     top: 0;
     right: 0;
     bottom: 0;
-    z-index:0;
+    z-index: 0;
     overflow-y: auto;
     overflow-x: hidden;
     transition: all 0.3s ease;
 }
-.section.back-section{
+
+.section.back-section {
     z-index: 1;
 }
-.section.active{
+
+.section.active {
     z-index: 2;
     opacity: 1;
     animation: slideSection 1s ease;
 }
-@keyframes slideSection{
-    0%{
+
+@keyframes slideSection {
+    0% {
         transform: translateX(100%);
     }
-    100%{
+
+    100% {
         transform: translateX(0%);
     }
 
@@ -77,6 +82,7 @@ ul {
 .hidden {
     display: none !important;
 }
+
 .pad-15 {
     padding-left: 15px;
     padding-right: 15px;
@@ -97,7 +103,7 @@ ul {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 60px;
-    
+
 
 }
 
@@ -154,7 +160,8 @@ ul {
 .btn:hover {
     transform: scale(1.05);
 }
-.shadow-dark{
+
+.shadow-dark {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
@@ -220,7 +227,8 @@ ul {
     right: 0;
 
 }
-.aside .nav-toggler.open span{
+
+.aside .nav-toggler.open span {
     background-color: transparent;
 }
 
@@ -247,11 +255,13 @@ ul {
     display: inline-block;
     position: relative;
 }
-.aside .nav-toggler.open span::before{
+
+.aside .nav-toggler.open span::before {
     transform: rotate(45deg);
     top: 0;
 }
-.aside .nav-toggler.open span::after{
+
+.aside .nav-toggler.open span::after {
     transform: rotate(-45deg);
     top: 0;
 }
@@ -349,23 +359,25 @@ h3.profession {
     text-align: center;
     position: relative;
 }
-.home-img::after{
+
+.home-img::after {
     content: "";
     position: absolute;
     height: 80px;
     width: 80px;
     border-bottom: 10px solid var(--skin-color);
-    border-right:10px solid var(--skin-color) ;
+    border-right: 10px solid var(--skin-color);
     right: 20px;
     bottom: -40px;
 }
-.home-img::before{
+
+.home-img::before {
     content: "";
     position: absolute;
     height: 80px;
     width: 80px;
     border-top: 10px solid var(--skin-color);
-    border-left:10px solid var(--skin-color) ;
+    border-left: 10px solid var(--skin-color);
     left: -20px;
     top: -40px;
 }
@@ -376,90 +388,106 @@ h3.profession {
     border-radius: 5px;
 
 }
+
 /*about*/
-.about .about-content{
+.about .about-content {
     flex: 0 0 100%;
     max-width: 100%;
 }
-.about .about-content .about-text{
-    flex:0 0 100%;
+
+.about .about-content .about-text {
+    flex: 0 0 100%;
     max-width: 100%;
 }
-.about .about-content .about-text h3{
+
+.about .about-content .about-text h3 {
     font-size: 24px;
     margin-bottom: 15px;
     font-weight: 700;
     color: var(--text-blacky-900);
 }
-.about .about-content .about-text h3 span{
+
+.about .about-content .about-text h3 span {
     color: var(--skin-color);
 }
-.about .about-content .about-text p{
+
+.about .about-content .about-text p {
     font-size: 16px;
     line-height: 25px;
     color: var(--text-blacky-900);
 }
-.about .about-content .personal-info{
+
+.about .about-content .personal-info {
     flex: 0 0 60%;
     max-width: 60%;
     margin-top: 40px;
 }
-.about .about-content .personal-info .info-item{
+
+.about .about-content .personal-info .info-item {
     flex: 0 0 50%;
     max-width: 50%;
-    
+
 }
-.about .about-content .personal-info .info-item p{
+
+.about .about-content .personal-info .info-item p {
     font-weight: 600;
     padding: 10px 0;
     font-size: 16px;
     color: var(--text-blacky-900);
-    border-bottom: 1px solid var(--blacky-50) ;
-    
+    border-bottom: 1px solid var(--blacky-50);
+
 }
-.about .about-content .personal-info .info-item p span{
+
+.about .about-content .personal-info .info-item p span {
     font-weight: 400;
     color: var(--text-blacky-900);
     margin-left: 4px;
     display: inline-block;
 
 }
-.about .about-content .personal-info .buttons{
+
+.about .about-content .personal-info .buttons {
     margin-top: 30px;
 }
-.about .about-content .personal-info .buttons .btn{
+
+.about .about-content .personal-info .buttons .btn {
     margin-right: 15px;
     margin-top: 10px;
 }
 
-.about .about-content .skills{
+.about .about-content .skills {
     flex: 0 0 40%;
     max-width: 40%;
     margin-top: 40px;
 }
-.about .about-content .skills .skill-item{
+
+.about .about-content .skills .skill-item {
     flex: 0 0 100%;
     max-width: 100%;
 }
-.about .about-content .skills .skill-item{
-    margin-bottom: 25px; 
+
+.about .about-content .skills .skill-item {
+    margin-bottom: 25px;
 
 }
-.about .about-content .skills .skill-item h5{
+
+.about .about-content .skills .skill-item h5 {
     line-height: 40px;
     font-weight: 600;
     font-size: 16px;
     color: var(--text-blacky-900);
     text-transform: capitalize;
 }
-.about .about-content .skills .skill-item .progress{
+
+.about .about-content .skills .skill-item .progress {
     background-color: var(--blacky-50);
     height: 7px;
     border-radius: 4px;
     width: 100%;
     position: relative;
 }
-.about .about-content .skills .skill-item .progress .progress-in{
+
+.about .about-content .skills .skill-item .progress .progress-in {
     position: absolute;
     left: 0;
     top: 0;
@@ -467,32 +495,37 @@ h3.profession {
     border-radius: 4px;
     background-color: var(--skin-color);
 }
-.about .about-content .skills .skill-item .skill-percent{
+
+.about .about-content .skills .skill-item .skill-percent {
     position: absolute;
     right: 0;
     color: var(--text-blacky-900);
     top: -40px;
-    font-weight:400;
+    font-weight: 400;
     line-height: 40px;
 }
+
 .about .about-content .education,
-.about .about-content .experience{
+.about .about-content .experience {
     flex: 0 0 50%;
     max-width: 50%;
     margin-top: 30px;
 }
-.about .about-content h3.title{
+
+.about .about-content h3.title {
     font-size: 24px;
     font-weight: 700;
     color: var(--text-blacky-900);
     margin-bottom: 30px;
 }
-.about .about-content .timeline-box{
+
+.about .about-content .timeline-box {
     flex: 0 0 100%;
     max-width: 100%;
 
 }
-.about .about-content .timeline{
+
+.about .about-content .timeline {
     background-color: var(--blacky-100);
     padding: 30px 15px;
     border-radius: 10px;
@@ -500,15 +533,18 @@ h3.profession {
     width: 100%;
     position: relative;
 }
-.about .about-content .timeline .timeline-item{
+
+.about .about-content .timeline .timeline-item {
     position: relative;
     padding-left: 37px;
     padding-bottom: 50px;
 }
-.about .about-content .timeline .timeline-item:last-child{
+
+.about .about-content .timeline .timeline-item:last-child {
     padding-bottom: 0;
 }
-.about .about-content .timeline .timeline-item::before{
+
+.about .about-content .timeline .timeline-item::before {
     content: '';
     width: 1px;
     position: absolute;
@@ -517,48 +553,56 @@ h3.profession {
     top: 0;
     background-color: var(--skin-color);
 }
-.about .about-content .timeline .circle-dot{
-    position:absolute;
+
+.about .about-content .timeline .circle-dot {
+    position: absolute;
     left: 0;
     top: 0;
     height: 15px;
     width: 15px;
     border-radius: 50%;
     background-color: var(--skin-color);
-    
+
 }
-.about .about-content .timeline .timeline-date{
+
+.about .about-content .timeline .timeline-date {
     font-weight: 400;
     font-size: 14px;
     margin-bottom: 12px;
     color: var(--text-blacky-900);
 }
-.about .about-content .timeline .timeline-date .fa{
+
+.about .about-content .timeline .timeline-date .fa {
     margin-right: 5px;
 }
-.about .about-content .timeline .timeline-title{
+
+.about .about-content .timeline .timeline-title {
     font-weight: 700;
     font-size: 18px;
     margin-bottom: 15px;
     color: var(--text-blacky-900);
     text-transform: capitalize;
 }
-.about .about-content .timeline .timeline-text{
+
+.about .about-content .timeline .timeline-text {
     line-height: 25px;
     font-size: 16px;
     text-align: justify;
     color: grey;
 }
+
 /*Projet*/
-.projet .container{
+.projet .container {
     padding-bottom: 40px;
 }
-.projet .projet-item{
+
+.projet .projet-item {
     margin-bottom: 30px;
     flex: 0 0 33.33%;
     max-width: 33.33%;
 }
-.projet .projet-item .projet-item-inner{
+
+.projet .projet-item .projet-item-inner {
     background-color: var(--blacky-100);
     border: 1px solid var(--blacky-50);
     padding: 30px 15px;
@@ -566,11 +610,13 @@ h3.profession {
     text-align: center;
     transition: all 0.3s ease;
 }
-.projet .projet-item .projet-item-inner:hover{
+
+.projet .projet-item .projet-item-inner:hover {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 
 }
-.projet .projet-item .projet-item-inner .icon{
+
+.projet .projet-item .projet-item-inner .icon {
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -580,133 +626,158 @@ h3.profession {
     transition: all 0.3s ease;
 
 }
-.projet .projet-item .projet-item-inner .icon .fa{
+
+.projet .projet-item .projet-item-inner .icon .fa {
     font-size: 40px;
     line-height: 60px;
     color: var(--skin-color);
 }
+
 .projet .projet-item .projet-item-inner:hover .icon {
     background-color: var(--skin-color);
 }
-.projet .projet-item .projet-item-inner:hover .icon .fa{
+
+.projet .projet-item .projet-item-inner:hover .icon .fa {
     font-size: 25px;
     color: #ffffff;
 }
-.projet .projet-item .projet-item-inner h4{
+
+.projet .projet-item .projet-item-inner h4 {
     font-size: 14px;
     font-weight: 700;
     color: var(--text-blacky-900);
     margin-bottom: 15px;
     text-transform: capitalize;
 }
-.projet .projet-item .projet-item-inner p{
+
+.projet .projet-item .projet-item-inner p {
     font-size: 16px;
     color: var(--text-blacky-700);
     line-height: 25px;
 }
+
 /*travaux*/
-.travaux .container{
+.travaux .container {
     padding-bottom: 40px;
 }
-.travaux .travaux-heading{
+
+.travaux .travaux-heading {
     flex: 0 0 100%;
     max-width: 100%;
     margin-bottom: 40px;
 }
-.travaux .travaux-heading h2{
+
+.travaux .travaux-heading h2 {
     color: var(--text-blacky-900);
     font-weight: 500;
 }
-.travaux .travaux-item{
+
+.travaux .travaux-item {
     flex: 0 0 33.333333%;
     max-width: 33.333333%;
     margin-bottom: 30px;
 }
-.travaux .travaux-item-inner{
+
+.travaux .travaux-item-inner {
     border: 6px solid var(--blacky-100);
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
 }
-.travaux .travaux-item-inner .travaux-img img{
+
+.travaux .travaux-item-inner .travaux-img img {
     width: 100%;
     display: block;
 }
+
 /*comprep*/
 .skills-table {
     width: 100%;
     border-collapse: collapse;
-  }
-  
-  
-  .skills-table th, .skills-table td {
+}
+
+
+.skills-table th,
+.skills-table td {
     border: 1px solid #ccc;
     padding: 8px;
     color: var(--text-blacky-700);
-  }
-  
-  .skills-table th {
-   
+}
+
+.skills-table th {
+
     text-align: left;
-    
-  }
+
+}
+
 /*veille*/
 /*entreprise*/
 /*contact*/
-.contact-title{
+.contact-title {
     color: var(--skin-color);
     text-align: center;
     font-size: 25px;
     margin-bottom: 20px;
 }
-.contact-sub-title{
+
+.contact-sub-title {
     color: var(--text-blacky-900);
     text-align: center;
     font-size: 15px;
     margin-bottom: 60px;
 }
-.contact .contact-info-item{
+
+.contact .contact-info-item {
     flex: 0 0 33%;
     max-width: 33%;
     text-align: center;
     margin-bottom: 60px;
 }
-.contact .contact-info-item .icon{
+
+.contact .contact-info-item .icon {
     display: inline-block;
 }
-.contact .contact-info-item .icon .fa{
+
+.contact .contact-info-item .icon .fa {
     font-size: 25px;
     color: var(--skin-color);
 }
-.contact .contact-info-item h4{
+
+.contact .contact-info-item h4 {
     font-size: 18px;
     font-weight: 700;
     color: var(--text-blacky-900);
     text-transform: capitalize;
     margin: 15px 0 5px;
 }
-.contact .contact-info-item p{
+
+.contact .contact-info-item p {
     font-size: 16px;
     line-height: 25px;
     color: var(--text-blacky-700);
     font-weight: 400;
 }
-.contact .contact-form{
+
+.contact .contact-form {
     flex: 0 0 100%;
     max-width: 100%;
 }
-.contact .contact-form .col-6{
+
+.contact .contact-form .col-6 {
     flex: 0 0 50%;
     max-width: 50%;
 }
-.contact .contact-form .col-12{
+
+.contact .contact-form .col-12 {
     flex: 0 0 100%;
     max-width: 100%;
 }
-.contact .contact-form .form-item{
+
+.contact .contact-form .form-item {
     margin-bottom: 30px;
 }
-.contact .contact-form .form-item .form-control{
+
+.contact .contact-form .form-item .form-control {
     width: 100%;
     height: 50px;
     border: 1px solid var(--blacky-50);
@@ -717,64 +788,79 @@ h3.profession {
     color: var(--text-blacky-900);
     transition: all 0.3s ease;
 }
-.contact .contact-form .form-item .form-control:focus{
+
+.contact .contact-form .form-item .form-control:focus {
     box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
-.contact .contact-form .form-item textarea.form-control{
+
+.contact .contact-form .form-item textarea.form-control {
     height: 140px;
 }
-.contact .contact-form .btn{
+
+.contact .contact-form .btn {
     height: 50px;
     padding: 0 50px;
 }
-@media(max-width:1119px)
-{
-    .aside{
+
+@media(max-width:1119px) {
+    .aside {
         left: -270px;
     }
-    .section .container{
+
+    .section .container {
         padding-top: 70px;
     }
-    .aside.open{
+
+    .aside.open {
         left: 0;
     }
-    .aside .nav-toggler.open{
+
+    .aside .nav-toggler.open {
         left: 300px;
     }
-    .aside .nav-toggler{
+
+    .aside .nav-toggler {
         display: flex;
         left: 30px;
     }
-    .section{
+
+    .section {
         left: 0;
     }
-    .section.open{
+
+    .section.open {
         left: 270px;
     }
-    .about .about-content .personal-info .info-item p span{
+
+    .about .about-content .personal-info .info-item p span {
         display: block;
         margin-left: 0;
     }
 }
-@media(max-width:991px){
-    .contact .contact-info-item
-    .entreprise,
+
+@media(max-width:991px) {
+
+    .contact .contact-info-item .entreprise,
     .veille,
     .comprep .skills-table,
     .travaux .travaux-item,
-    .projet .projet-item{
+    .projet .projet-item {
         flex: 0 0 50%;
         max-width: 50%;
     }
-    .home .home-info{
+
+    .home .home-info {
         flex: 0 0 100%;
         max-width: 100%;
     }
-    .home .home-img{
+
+    .home .home-img {
         display: none;
     }
 }
-@media(max-width:768px){
+
+@media(max-width:768px) {
+
     .contact .contact-form .col-6,
     .contact .contact-info-item,
     .entreprise,
@@ -785,12 +871,14 @@ h3.profession {
     .about .about-content .education,
     .about .about-content .experience,
     .about .about-content .skills,
-    .about .about-content .personal-info{
+    .about .about-content .personal-info {
         flex: 0 0 100%;
         max-width: 100%;
     }
 }
-@media(max-width:987px){
+
+@media(max-width:987px) {
+
     .contact .contact-form .col-6,
     .contact .contact-info-item,
     .entreprise,
@@ -801,23 +889,10 @@ h3.profession {
     .about .about-content .education,
     .about .about-content .experience,
     .about .about-content .skills,
-    .about .about-content .personal-info{
+    .about .about-content .personal-info {
         flex: 0 0 100%;
         max-width: 100%;
     }
 }
+
 /* Pour une largeur d'écran minimale de 400px */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
