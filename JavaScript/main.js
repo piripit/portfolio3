@@ -1,54 +1,61 @@
 /*type animation */
 var typed = new Typed(".typing", {
-    strings: ["","FIATUWO", "Moriel", "Developpeur Front-End Junior"],
-    loop: true,
-    backSpeed: 60,
-    typeSpeed: 100,
-  });
-  /*aside */
+  strings: ["", "FIATUWO", "Moriel", "Developpeur Front-End Junior"],
+  loop: true,
+  backSpeed: 60,
+  typeSpeed: 100,
+});
+/*aside */
 const nav = document.querySelector(".nav"),
-navList = nav.querySelectorAll("li"),
-totalNavList = navList.length,
-allSection = document.querySelectorAll(".section"),
-totalSection = allSection.length;
-for(let i=0; i<totalNavList; i++)
-    {
-    const a = navList[i].querySelector("a");
-   a.addEventListener("click", function(){
-    for (let i=0; i<totalSection; i++){
-        allSection[i].classList.remove("back-section");
+  navList = nav.querySelectorAll("li"),
+  totalNavList = navList.length,
+  allSection = document.querySelectorAll(".section"),
+  totalSection = allSection.length;
+for (let i = 0; i < totalNavList; i++) {
+  const a = navList[i].querySelector("a");
+  a.addEventListener("click", function () {
+    for (let i = 0; i < totalSection; i++) {
+      allSection[i].classList.remove("back-section");
     }
-    for(let j=0; j<totalNavList; j++){
-        if(navList[j].querySelector("a").classList.contains("active")){
-            allSection[j].classList.add("back-section");
-        }
-        navList[j].querySelector("a").classList.remove("active");
+    for (let j = 0; j < totalNavList; j++) {
+      if (navList[j].querySelector("a").classList.contains("active")) {
+        allSection[j].classList.add("back-section");
+      }
+      navList[j].querySelector("a").classList.remove("active");
     }
-    this.classList.add("active")
+    this.classList.add("active");
     showSection(this);
-    if(window.innerWidth < 1200){
-        asideSectionTogglerBtn();
+    if (window.innerWidth < 1200) {
+      asideSectionTogglerBtn();
     }
-   })
+  });
 }
-function showSection(element){
-    for (let i=0; i<totalSection; i++){
-        allSection[i].classList.remove("active");
-    }
-    const target = element.getAttribute("href").split("#")[1];
-    document.querySelector("#" + target).classList.add("active")
-
+function showSection(element) {
+  for (let i = 0; i < totalSection; i++) {
+    allSection[i].classList.remove("active");
+  }
+  const target = element.getAttribute("href").split("#")[1];
+  document.querySelector("#" + target).classList.add("active");
 }
 const navTogglerBtn = document.querySelector(".nav-toggler"),
-aside = document.querySelector(".aside");
+  aside = document.querySelector(".aside");
 navTogglerBtn.addEventListener("click", () => {
-    asideSectionTogglerBtn();
-})
-function asideSectionTogglerBtn(){
-    aside.classList.toggle("open");
-    navTogglerBtn.classList.toggle("open");
-    for (let i=0; i<totalSection; i++){
-        allSection[i].classList.toggle("open");
-    }
+  asideSectionTogglerBtn();
+});
+function asideSectionTogglerBtn() {
+  aside.classList.toggle("open");
+  navTogglerBtn.classList.toggle("open");
+  for (let i = 0; i < totalSection; i++) {
+    allSection[i].classList.toggle("open");
+  }
 }
+document.addEventListener("DOMContentLoaded", function () {
+  const linkedinBtn = document.getElementById("linkedin-btn");
 
+  linkedinBtn.addEventListener("click", function () {
+    window.open(
+      "https://www.linkedin.com/in/y-moriel-fiatuwo-51544a225/",
+      "_blank"
+    );
+  });
+});
